@@ -1,3 +1,5 @@
 **.swp
 **.Rhistory
 tests/Stripe.RData
+**.RData
+tests/clean.r
