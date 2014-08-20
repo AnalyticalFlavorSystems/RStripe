@@ -9,7 +9,7 @@ stripe_balance_history(api_key, args = NULL)
 \item{api_key}{Your Stripe API Key}
 
 \item{args}{optional list which can include
-\href{https://stripe.com/docs/api#balance_history}{everything here}}
+\url{https://stripe.com/docs/api#balance_history}.}
 }
 \value{
 A data frame with balance history information if succeeded.

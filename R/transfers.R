@@ -52,7 +52,7 @@ stripe_update_transfer <- function(api_key, transfer_id, args) {
 #' Cancel a tranfer on Stripe.
 #'
 #' @param api_key Your Stripe API Key
-#' @param tranfer_id The id for the tranfer you want to cancel
+#' @param transfer_id The id for the tranfer you want to cancel
 #' @export
 #' @return A data frame with nothing if successful.
 stripe_cancel_transfer <- function(api_key, transfer_id) {

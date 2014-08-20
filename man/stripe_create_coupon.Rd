@@ -10,7 +10,7 @@ stripe_create_coupon(api_key, args)
 
 \item{args}{An list which must contain \strong{duration}.
 It can also contain \strong{id}, \strong{amount_off},
-\strong{currency} and more.  View \href{htts://stripe.com/docs/api#create_coupon}{here}.}
+\strong{currency} and more.  View \url{http://stripe.com/docs/api#create_coupon}.}
 }
 \value{
 A data frame with the coupon information

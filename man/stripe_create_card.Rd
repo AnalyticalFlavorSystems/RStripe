@@ -21,7 +21,10 @@ A data frame with card information
 Add a credit card to Stripe.
 }
 \examples{
-stripe_create_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",
-list(card="tok_14SsjM2eZvKYlo2CCtdx2AvO")
+\dontrun{stripe_create_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",
+list(card="tok_14SsjM2eZvKYlo2CCtdx2AvO")}
+
+\dontrun{stripe_create_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",
+list(card=list(number="4242424242424242", exp_month="03", exp_year="2018")))}
 }
 

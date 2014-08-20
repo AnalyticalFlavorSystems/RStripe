@@ -1,31 +1,3 @@
-require(RCurl)
-require(httr)
-require(jsonlite)
-
-
-
-source("../R/charges.r")
-source("../R/cards.r")
-source("../R/refunds.r")
-source("../R/customers.r")
-source("../R/accounts.r")
-source("../R/app_fees.r")
-source("../R/app_fee_refunds.r")
-source("../R/balance.r")
-source("../R/coupons.r")
-source("../R/discounts.r")
-source("../R/disputes.r")
-source("../R/events.r")
-source("../R/invoice_items.r")
-source("../R/invoices.r")
-source("../R/plans.r")
-source("../R/recipients.r")
-source("../R/refunds.r")
-source("../R/subscriptions.r")
-source("../R/tokens.r")
-source("../R/transfers.r")
-
-
 # --------------------------------------------------
 # Helper Functions
 # --------------------------------------------------

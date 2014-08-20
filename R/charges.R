@@ -73,7 +73,6 @@ stripe_capture_charge <- function(api_key, charge_id, args=NULL) {
 #' List all charges.
 #'
 #' @param api_key Your Stripe API Key
-#' @param charge_id The identifier of the charge to be captured
 #' @param args an optional list that can include \strong{customer},
 #' \strong{created}, \strong{optional}, \strong{ending_before},
 #' \strong{limit}, \strong{starting_after}

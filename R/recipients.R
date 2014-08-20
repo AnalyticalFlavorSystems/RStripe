@@ -45,7 +45,7 @@ stripe_update_recipient <- function(api_key, recipient_id, args) {
 #' Delete a recipient on Stripe.
 #'
 #' @param api_key Your Stripe API Key
-#' @param recipient The id for the recipient you want to delete
+#' @param recipient_id The id for the recipient you want to delete
 #' @export
 #' @return A data frame with recipient information
 stripe_delete_recipient <- function(api_key, recipient_id) {

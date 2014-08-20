@@ -7,7 +7,7 @@
 #' @param api_key Your Stripe API Key
 #' @param args An list which must contain \strong{duration}.
 #' It can also contain \strong{id}, \strong{amount_off},
-#' \strong{currency} and more.  View \href{htts://stripe.com/docs/api#create_coupon}{here}.
+#' \strong{currency} and more.  View \url{http://stripe.com/docs/api#create_coupon}.
 #' @export
 #' @examples stripe_create_coupon("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
 #' list(amount_off=200, duration='forever'))
@@ -29,7 +29,7 @@ stripe_create_coupon <- function(api_key, args) {
 #' @export
 #' @return A data frame with the coupon information
 stripe_retrieve_coupon <- function(api_key, coupon_id) {
-    paste0("https://api.stripe.com/v1/coupons/", coupon_id)
+    link <- paste0("https://api.stripe.com/v1/coupons/", coupon_id)
     .get(api_key, link)
 }
 

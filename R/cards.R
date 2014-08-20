@@ -10,10 +10,12 @@
 #' @param args A required list of either contains a token,
 #' or a card dictionary. /href{https://stripe.com/docs/api#create_card}{more info here}
 #' @export
-#' @examples stripe_create_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H", 
-#' list(card="tok_14SsjM2eZvKYlo2CCtdx2AvO")
-#' @examples stripe_create_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H", 
-#' list(card=list(number="4242424242424242", exp_month="03", exp_year="2018")))
+#' @examples 
+#' \dontrun{stripe_create_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H", 
+#' list(card="tok_14SsjM2eZvKYlo2CCtdx2AvO")}
+#' 
+#' \dontrun{stripe_create_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H", 
+#' list(card=list(number="4242424242424242", exp_month="03", exp_year="2018")))}
 #' @return A data frame with card information
 stripe_create_card <- function(api_key, customer_id, args) {
     args <- .card(args)
@@ -50,8 +52,9 @@ stripe_retrieve_card <- function(api_key, card_id, customer_id) {
 #' \strong{exp_month}, \strong{exp_year},
 #' \strong{name}
 #' @export
-#' @examples stripe_update_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",
-#' "card_14TLyd2eZvKYloc2C9PXnfFmi", list(exp_year="04"))
+#' @examples 
+#' \dontrun{stripe_update_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",
+#' "card_14TLyd2eZvKYloc2C9PXnfFmi", list(exp_year="04"))}
 #' @return A data frame with card information
 stripe_update_card <- function(api_key, customer_id, card_id, args) {
     link <- paste0("https://api.stripe.com/v1/customers/",

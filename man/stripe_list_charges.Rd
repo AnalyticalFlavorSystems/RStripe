@@ -8,8 +8,6 @@ stripe_list_charges(api_key, args = NULL)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{charge_id}{The identifier of the charge to be captured}
-
 \item{args}{an optional list that can include \strong{customer},
 \strong{created}, \strong{optional}, \strong{ending_before},
 \strong{limit}, \strong{starting_after}}

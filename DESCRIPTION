@@ -7,5 +7,9 @@ Description: This package makes an easier interface to communicate with the
     stripe payment processor instead of using complex RCurl syntax
 Depends:
     R (>= 3.1.1)
-License: MIT
+Imports:
+    jsonlite,
+    RCurl,
+    httr
+License: MIT + file LICENSE
 LazyData: true

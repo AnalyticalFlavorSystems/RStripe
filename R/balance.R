@@ -27,7 +27,7 @@ stripe_retrieve_balance_transaction <- function(api_key, transaction_id) {
 #'
 #' @param api_key Your Stripe API Key
 #' @param args optional list which can include
-#' \href{https://stripe.com/docs/api#balance_history}{everything here}
+#' \url{https://stripe.com/docs/api#balance_history}.
 #' @export
 #' @return A data frame with balance history information if succeeded.
 stripe_balance_history <- function(api_key, args=NULL) {

@@ -27,7 +27,7 @@ A data frame with card information
 Update a credit card on Stripe.
 }
 \examples{
-stripe_update_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",
-"card_14TLyd2eZvKYloc2C9PXnfFmi", list(exp_year="04"))
+\dontrun{stripe_update_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",
+"card_14TLyd2eZvKYloc2C9PXnfFmi", list(exp_year="04"))}
 }
 

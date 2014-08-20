@@ -8,7 +8,7 @@ stripe_cancel_transfer(api_key, transfer_id)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{tranfer_id}{The id for the tranfer you want to cancel}
+\item{transfer_id}{The id for the tranfer you want to cancel}
 }
 \value{
 A data frame with nothing if successful.
