@@ -3,7 +3,9 @@ Title: An API to connect to stripe payment processor
 Version: 0.1
 Author: Evan Farrell <evandev@gastrograph.com>
 Maintainer: Evan Farrell <evandev@gastrograph.com>
-Description: This package makes an easier interface to communicate with the stripe payment processor instead of using complex RCurl syntax
-Depends: R (>= 3.1.1)
+Description: This package makes an easier interface to communicate with the
+    stripe payment processor instead of using complex RCurl syntax
+Depends:
+    R (>= 3.1.1)
 License: MIT
 LazyData: true
