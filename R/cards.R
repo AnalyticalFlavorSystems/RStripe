@@ -4,6 +4,8 @@
 
 #' Add a credit card to Stripe.
 #'
+#' Add a new credit card to a customer. Set it as default.
+#'
 #' @param api_key Your Stripe API Key
 #' @param customer_id The id for the customer you want the credit card
 #' added to.
@@ -26,6 +28,8 @@ stripe_create_card <- function(api_key, customer_id, args) {
 
 #' Retrieve a card from a customer
 #'
+#' Retrieve the information about a credit card.  Can retrieve last 4 digits.
+#'
 #' @param api_key Your Stripe API Key
 #' @param card_id The id for the card you want to retrieve
 #' @param customer_id The id for the customer where the card is
@@ -40,6 +44,8 @@ stripe_retrieve_card <- function(api_key, card_id, customer_id) {
 
 
 #' Update a credit card on Stripe.
+#'
+#' Update infomration about the billing address for a credit card as well as other fields.
 #'
 #' @param api_key Your Stripe API Key
 #' @param customer_id The id for the customer you want the credit card
@@ -64,6 +70,8 @@ stripe_update_card <- function(api_key, customer_id, card_id, args) {
 
 #' Delete a credit card on Stripe.
 #'
+#' Delete a credit card off a customer's account.
+#'
 #' @param api_key Your Stripe API Key
 #' @param customer_id The id for the customer where the card is.
 #' @param card_id The id for the card you want to delete
@@ -76,6 +84,8 @@ stripe_delete_card <- function(api_key, customer_id, card_id) {
 }
 
 #' List credit card on customers. 
+#'
+#' List all the credit cards linked to a customer.
 #'
 #' @param api_key Your Stripe API Key
 #' @param customer_id The id for the customer you want to list the cards
