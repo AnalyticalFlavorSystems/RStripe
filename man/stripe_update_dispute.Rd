@@ -17,7 +17,7 @@ and metadata}
 Returns a dispute data frame if valid.
 }
 \description{
-Update a dispute.
+Update a dispute and add evidence to it.
 }
 \examples{
 stripe_update_dispute("sk_test_BQokikJOvBiI2HlWgH4olfQ2",

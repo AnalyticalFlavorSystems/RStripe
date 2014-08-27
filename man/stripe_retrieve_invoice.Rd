@@ -14,6 +14,6 @@ stripe_retrieve_invoice(api_key, invoice_id)
 A data frame with the invoice if successful.
 }
 \description{
-Retrieve an Invoice.
+Retrieve all the information on a particular invoice.
 }
 

@@ -24,7 +24,7 @@ added to.}
 A data frame with card information
 }
 \description{
-Update a credit card on Stripe.
+Update infomration about the billing address for a credit card as well as other fields.
 }
 \examples{
 \dontrun{stripe_update_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",

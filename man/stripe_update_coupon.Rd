@@ -17,6 +17,6 @@ and/or a \strong{description}}
 A data frame with the new coupon information if succeeded.
 }
 \description{
-Update a coupon.
+Update the information about a coupon.
 }
 

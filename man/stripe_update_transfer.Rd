@@ -17,6 +17,6 @@ stripe_update_transfer(api_key, transfer_id, args)
 A data frame with the updated transfer info if successful.
 }
 \description{
-Update a Transfer
+You can update a transfer that is scheduled or has been accepted by changing description.
 }
 

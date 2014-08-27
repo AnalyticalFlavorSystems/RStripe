@@ -17,6 +17,6 @@ stripe_create_refund(api_key, charge_id, args = NULL)
 A data frame with the new refund info if successful.
 }
 \description{
-Create a Refund
+Create a new refund on a charge.
 }
 

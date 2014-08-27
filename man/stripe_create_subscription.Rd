@@ -19,6 +19,6 @@ and \strong{quantity}}
 A data frame with the new subscription info if successful.
 }
 \description{
-Create a Subscription
+Create a new subscription for a customer and add it to them.
 }
 

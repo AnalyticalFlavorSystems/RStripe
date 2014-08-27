@@ -17,6 +17,7 @@ stripe_list_refunds(api_key, charge_id, args = NULL)
 A data frame with refunds information
 }
 \description{
-List Refunds
+List all the refunds that a charge has.  You can have multiple refunds per charge until the
+full amount is reached.
 }
 

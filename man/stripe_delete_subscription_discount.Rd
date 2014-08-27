@@ -17,6 +17,6 @@ has the discount to be deleted.}
 Returns a data frame deleted true if if succeeded.
 }
 \description{
-Delete a subscription discount.
+Delete a discount from a customer's subscription.
 }
 

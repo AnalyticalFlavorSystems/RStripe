@@ -12,6 +12,6 @@ stripe_retrieve_balance(api_key)
 A data frame with your account balance
 }
 \description{
-Retrieve Stripe Account Balance.
+Retrieve the balance of your stripe account.
 }
 

@@ -16,7 +16,7 @@ It can also contain \strong{id}, \strong{amount_off},
 A data frame with the coupon information
 }
 \description{
-Create a coupon.
+Create a new coupon in your account.
 }
 \examples{
 stripe_create_coupon("sk_test_BQokikJOvBiI2HlWgH4olfQ2",

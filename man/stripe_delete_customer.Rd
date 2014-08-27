@@ -14,6 +14,6 @@ stripe_delete_customer(api_key, customer_id)
 A data frame empty if successful.
 }
 \description{
-Delete a Customer.
+Remove a customer from your stripe account.
 }
 

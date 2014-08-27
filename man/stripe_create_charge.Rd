@@ -19,7 +19,7 @@ It can also contain \strong{description}, \strong{metadata},
 A data frame with the new charge info if successful.
 }
 \description{
-Create a charge.
+Create a new charge for a customer or standalone on card.
 }
 \examples{
 stripe_create_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2",

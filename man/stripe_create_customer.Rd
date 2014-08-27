@@ -17,6 +17,6 @@ stripe_create_customer(api_key, args = NULL)
 A data frame with the new Customer info if successful.
 }
 \description{
-Create a Customer.
+Create a new customer and add information to them.
 }
 

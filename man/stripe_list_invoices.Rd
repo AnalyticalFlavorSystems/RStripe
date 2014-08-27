@@ -15,6 +15,6 @@ stripe_list_invoices(api_key, args = NULL)
 A data frame with the invoices if successful.
 }
 \description{
-List Invoices.
+List invoices for a particular customer or all customers within a date.
 }
 

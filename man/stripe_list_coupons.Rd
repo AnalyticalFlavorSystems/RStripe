@@ -15,7 +15,7 @@ stripe_list_coupons(api_key, args = NULL)
 A data frame with all the coupons.
 }
 \description{
-List all coupons.
+List all the coupons currently in your account.
 }
 \examples{
 stripe_list_application_fee_refunds("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",

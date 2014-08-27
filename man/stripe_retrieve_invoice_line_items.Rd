@@ -17,6 +17,6 @@ stripe_retrieve_invoice_line_items(api_key, invoice_id, args = NULL)
 A data frame with the invoice items if successful.
 }
 \description{
-Retrieve Invoice Items.
+Retreive all the items on an invoice.
 }
 

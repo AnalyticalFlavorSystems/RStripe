@@ -16,6 +16,6 @@ stripe_delete_card(api_key, customer_id, card_id)
 A data frame with card information
 }
 \description{
-Delete a credit card on Stripe.
+Delete a credit card off a customer's account.
 }
 

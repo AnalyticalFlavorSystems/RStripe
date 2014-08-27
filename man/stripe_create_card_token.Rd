@@ -16,7 +16,8 @@ It can also contain \strong{customer}.}
 A data frame with the new card token info if successful.
 }
 \description{
-Create a Card Token
+Create a card token to be used by other functions.  You can use this to create a charge,
+or to attach to a customer.
 }
 \examples{
 stripe_create_card_token("sk_test_BQokikJOvBiI2HlWgH4olfQ2",

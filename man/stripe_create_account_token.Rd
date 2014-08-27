@@ -15,7 +15,7 @@ stripe_create_account_token(api_key, args)
 A data frame with the new bank account token info if successful.
 }
 \description{
-Create a Bank Account Token
+Create a bank account token to schedule a transfer to a recipient.
 }
 \examples{
 stripe_create_account_token("sk_test_BQokikJOvBiI2HlWgH4olfQ2",

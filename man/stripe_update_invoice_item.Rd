@@ -17,6 +17,6 @@ and/or \strong{metadata}}
 A data frame with the updated invoice item if successful.
 }
 \description{
-Update an Invoice Item.
+Update the information or amount of an invoice item.
 }
 

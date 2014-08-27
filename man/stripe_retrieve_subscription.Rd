@@ -16,6 +16,6 @@ stripe_retrieve_subscription(api_key, customer_id, subscription_id)
 A data frame with the subscription info if successful.
 }
 \description{
-Retrieve a Subscription
+Retrieve all the information on a subscription for a customer.
 }
 

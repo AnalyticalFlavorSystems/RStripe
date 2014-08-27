@@ -16,6 +16,6 @@ stripe_list_charges(api_key, args = NULL)
 Returns a data frame with all customer charges.  10 if no limit specified.
 }
 \description{
-List all charges.
+List all charges conducted in a time frame or on customer.  Limits to 10 originally.
 }
 

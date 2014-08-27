@@ -15,6 +15,6 @@ stripe_list_plans(api_key, args = NULL)
 A data frame with plan information
 }
 \description{
-List Plans.
+List all the plans in your system. It defaults to showing 10 unless you change the limit.
 }
 

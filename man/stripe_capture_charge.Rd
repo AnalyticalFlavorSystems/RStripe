@@ -17,6 +17,7 @@ stripe_capture_charge(api_key, charge_id, args = NULL)
 Returns a charge data frame if the capture succeeded.
 }
 \description{
-Capture a charge.
+As part of the two step charge workflow, capture a charge.  Read more about the workflow
+on the stripe website.
 }
 

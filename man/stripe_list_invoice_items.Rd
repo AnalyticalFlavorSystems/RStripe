@@ -16,6 +16,6 @@ and \strong{starting_after}}
 A data frame with the the invoice items if successful.
 }
 \description{
-List all Invoice Item.
+List all the invoice items in your account.  This can be limited by customer, date, etc.
 }
 

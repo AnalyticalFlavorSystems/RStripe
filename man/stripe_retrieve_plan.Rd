@@ -14,6 +14,6 @@ stripe_retrieve_plan(api_key, plan_id)
 A data frame with the plan info if successful.
 }
 \description{
-Retrieve a Plan
+Retrieve the information on a particular plan on your account.
 }
 

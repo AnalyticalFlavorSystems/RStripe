@@ -18,6 +18,6 @@ it will be added to the next upcoming invoice}
 A data frame with the new invoice item if successful.
 }
 \description{
-Create an Invoice Item.
+Create a new invoice item with amount and attach it to a subscription or invoice.
 }
 

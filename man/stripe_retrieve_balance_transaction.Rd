@@ -14,6 +14,6 @@ stripe_retrieve_balance_transaction(api_key, transaction_id)
 A data frame with balance transaction information if succeeded.
 }
 \description{
-Retrieve a Stripe Account Balance transaction.
+Retrieve information about a transaction on your account.
 }
 

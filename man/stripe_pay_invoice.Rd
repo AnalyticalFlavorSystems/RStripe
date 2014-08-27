@@ -14,6 +14,6 @@ stripe_pay_invoice(api_key, invoice_id)
 A data frame with the invoice if successful.
 }
 \description{
-Pay an Invoice.
+Pay the invoice right now with customer information.
 }
 

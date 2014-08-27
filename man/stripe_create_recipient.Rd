@@ -17,6 +17,6 @@ and \strong{type}. It can also contain \strong{tax_id},
 A data frame with new recipient information
 }
 \description{
-Add a recipient to Stripe.
+Add a new recipient to your account to schedule transfers and more.
 }
 

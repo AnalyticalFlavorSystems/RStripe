@@ -16,6 +16,6 @@ stripe_list_transfers(api_key, args = NULL)
 A data frame with transfers information
 }
 \description{
-List Transfers.
+List all the Bank Accoun transfers for the account.
 }
 

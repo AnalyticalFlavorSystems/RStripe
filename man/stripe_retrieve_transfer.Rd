@@ -14,6 +14,6 @@ stripe_retrieve_transfer(api_key, transfer_id)
 A data frame with the transfer info if successful.
 }
 \description{
-Retrieve a transfer
+You can get all the information about a pending transfer or an accepted transfer.
 }
 

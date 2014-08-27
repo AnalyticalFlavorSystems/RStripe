@@ -18,6 +18,6 @@ and \strong{statement_description}}
 A data frame with transfer information
 }
 \description{
-Create a transfer to Stripe.
+Create a new transfer that will be first marked as pending.
 }
 

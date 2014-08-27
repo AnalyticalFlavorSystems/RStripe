@@ -14,6 +14,6 @@ stripe_retrieve_customer(api_key, customer_id)
 A data frame with the Customer info if successful.
 }
 \description{
-Retrieve a Customer.
+Retrieve the information about a specific customer using their id.
 }
 

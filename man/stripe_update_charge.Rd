@@ -16,7 +16,7 @@ stripe_update_charge(api_key, charge_id, args)
 Returns a charge data frame if succeeded.
 }
 \description{
-Update a charge.
+Update the information about a charge.
 }
 \examples{
 stripe_update_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2",

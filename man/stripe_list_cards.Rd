@@ -17,6 +17,6 @@ stripe_list_cards(api_key, customer_id, args = NULL)
 A data frame with card information
 }
 \description{
-List credit card on customers.
+List all the credit cards linked to a customer.
 }
 

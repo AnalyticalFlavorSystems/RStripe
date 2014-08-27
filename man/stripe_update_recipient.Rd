@@ -18,6 +18,6 @@ stripe_update_recipient(api_key, recipient_id, args)
 A data frame with recipient information
 }
 \description{
-Update a recipient on Stripe.
+Update or add information about a recipient on stripe.
 }
 

@@ -17,6 +17,6 @@ and \strong{statement_description}}
 A data frame with the new invoice if successful.
 }
 \description{
-Create an Invoice.
+Create a new invoice for a customer.
 }
 

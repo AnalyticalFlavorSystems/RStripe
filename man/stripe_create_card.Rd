@@ -18,7 +18,7 @@ or a card dictionary. /href{https://stripe.com/docs/api#create_card}{more info h
 A data frame with card information
 }
 \description{
-Add a credit card to Stripe.
+Add a new credit card to a customer. Set it as default.
 }
 \examples{
 \dontrun{stripe_create_card("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "cus_4cb7HNjNSqqV2H",

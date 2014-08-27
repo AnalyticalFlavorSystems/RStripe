@@ -21,6 +21,6 @@ stripe_update_subscription(api_key, customer_id, subscription_id, args)
 A data frame with the updated subscription info if successful.
 }
 \description{
-Update a subscription.
+Update the information for a subscription on a customer.
 }
 

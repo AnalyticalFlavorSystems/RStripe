@@ -16,6 +16,6 @@ stripe_delete_subscription(api_key, customer_id, subscription_id)
 A data frame with nothing if successful.
 }
 \description{
-Delete a subscription on Stripe.
+Delete a subscription on a particular customer.
 }
 

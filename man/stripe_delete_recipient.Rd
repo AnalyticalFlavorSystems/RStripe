@@ -14,6 +14,6 @@ stripe_delete_recipient(api_key, recipient_id)
 A data frame with recipient information
 }
 \description{
-Delete a recipient on Stripe.
+Remove a recipient from your stripe account.
 }
 

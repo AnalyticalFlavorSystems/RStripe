@@ -14,6 +14,6 @@ stripe_delete_coupon(api_key, coupon_id)
 A null dataframe if succeeded.
 }
 \description{
-Delete a coupon.
+Delete a specific coupon from your account.
 }
 

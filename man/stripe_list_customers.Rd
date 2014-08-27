@@ -16,6 +16,6 @@ stripe_list_customers(api_key, args = NULL)
 A data frame with the Customer list if successful.
 }
 \description{
-Retrieve a list of Customer.
+Retrieve a list of all customers.  Defaults up to 10.
 }
 

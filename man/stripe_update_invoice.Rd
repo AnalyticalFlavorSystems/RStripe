@@ -18,6 +18,6 @@ and/or \strong{metadata}}
 A data frame with the updated invoice if successful.
 }
 \description{
-Update an Invoice.
+Update the information on an invoice, add a fee, close, or forgive it.
 }
 

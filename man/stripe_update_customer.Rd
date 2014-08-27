@@ -18,6 +18,6 @@ stripe_update_customer(api_key, customer_id, args)
 A data frame with the updated Customer info if successful.
 }
 \description{
-Update a Customer.
+Update the customer's information or add a new card to a customer.
 }
 

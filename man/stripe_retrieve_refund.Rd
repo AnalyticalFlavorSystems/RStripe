@@ -16,6 +16,6 @@ stripe_retrieve_refund(api_key, charge_id, refund_id)
 A data frame with the refund info if successful.
 }
 \description{
-Retrieve a refund.
+Retrieve all the information about a particular refund on a charge.
 }
 

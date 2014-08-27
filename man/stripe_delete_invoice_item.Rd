@@ -14,6 +14,6 @@ stripe_delete_invoice_item(api_key, item_id)
 A data frame without errors if successful.
 }
 \description{
-Delete an Invoice Item.
+Remove an invoice item from an invoice.
 }
 

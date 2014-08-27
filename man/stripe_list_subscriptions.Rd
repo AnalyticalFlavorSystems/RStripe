@@ -17,6 +17,6 @@ stripe_list_subscriptions(api_key, customer_id, args = NULL)
 A data frame with subscriptions information
 }
 \description{
-List Subscriptions
+List all the subscriptions currently acted on a customer.
 }
 

@@ -12,7 +12,7 @@ stripe_retrieve_account(api_key)
 Your account information in a data frame.
 }
 \description{
-Your Stripe Account.
+Retrieve your account.
 }
 \examples{
 stripe_retrieve_account("sk_test_2337VDxzNLS332zsso")

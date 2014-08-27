@@ -14,6 +14,6 @@ stripe_upcoming_customer_invoice(api_key, customer_id)
 A data frame with the upcoming invoice if successful.
 }
 \description{
-Retrieve upcoming customer's invoice.
+Retrieve the upcoming customer invoice to send out.
 }
 

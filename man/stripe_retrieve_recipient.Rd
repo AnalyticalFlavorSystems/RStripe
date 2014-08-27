@@ -14,6 +14,6 @@ stripe_retrieve_recipient(api_key, recipient_id)
 A data frame with recipient information
 }
 \description{
-Retrieve information on a recipient.
+Retrieve all the information on a recipient.
 }
 

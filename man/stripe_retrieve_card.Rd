@@ -17,6 +17,6 @@ added to.}
 A data frame with card information
 }
 \description{
-Retrieve a card from a customer
+Retrieve the information about a credit card.  Can retrieve last 4 digits.
 }
 

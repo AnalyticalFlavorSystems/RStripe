@@ -15,6 +15,6 @@ stripe_list_recipients(api_key, args = NULL)
 A data frame with recipient's information
 }
 \description{
-List all current recipients.
+List all the current recipients in your account.
 }
 

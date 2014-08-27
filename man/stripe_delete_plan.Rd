@@ -14,6 +14,6 @@ stripe_delete_plan(api_key, plan_id)
 A data frame with nothing if successful.
 }
 \description{
-Delete a plan on Stripe.
+Delete a plan in your system.  Only able to do this if you have no subscriptions on it.
 }
 

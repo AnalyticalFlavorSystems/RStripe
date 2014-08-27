@@ -18,7 +18,7 @@ and \strong{statement_description}}
 A data frame with the new plan info if successful.
 }
 \description{
-Create a Plan
+Create a new plan on your stripe account.
 }
 \examples{
 stripe_create_plan("sk_test_BQokikJOvBiI2HlWgH4olfQ2",

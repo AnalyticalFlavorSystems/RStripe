@@ -15,6 +15,6 @@ stripe_balance_history(api_key, args = NULL)
 A data frame with balance history information if succeeded.
 }
 \description{
-Retrieve a Stripe Account Balance History.
+Retrieve the history of your account balance.
 }
 

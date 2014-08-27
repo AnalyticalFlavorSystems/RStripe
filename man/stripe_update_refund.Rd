@@ -18,6 +18,6 @@ stripe_update_refund(api_key, charge_id, refund_id, args)
 A data frame with the updated refund info if successful.
 }
 \description{
-Update a Refund
+Update a refund with any metadata you want to include about the refund.
 }
 

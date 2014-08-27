@@ -14,6 +14,6 @@ stripe_retrieve_coupon(api_key, coupon_id)
 A data frame with the coupon information
 }
 \description{
-Retrieve a coupon.
+Retrieve the information about a coupon.
 }
 

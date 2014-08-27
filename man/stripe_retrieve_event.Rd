@@ -14,6 +14,6 @@ stripe_retrieve_event(api_key, event_id)
 Returns an event data frame if valid.
 }
 \description{
-Retrieve an event.
+Retrieve the information about a specific event.
 }
 

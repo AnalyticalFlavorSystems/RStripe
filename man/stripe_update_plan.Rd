@@ -17,6 +17,6 @@ stripe_update_plan(api_key, plan_id, args)
 A data frame with the updated plan info if successful.
 }
 \description{
-Update a Plan
+Update the information about a particular plan on your stripe account.
 }
 

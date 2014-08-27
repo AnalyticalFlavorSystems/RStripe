@@ -14,7 +14,7 @@ stripe_retrieve_charge(api_key, charge_id)
 Returns a charge data frame if valid.
 }
 \description{
-Retrieve a charge.
+Retrieve all the information about a specific charge.
 }
 \examples{
 stripe_retrieve_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
