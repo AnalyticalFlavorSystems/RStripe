@@ -11,9 +11,15 @@
 #' @param charge_id The id of the charge to refund.
 #'
 #' @param args A list can contain \strong{amount}, 
-#' \strong{refund_application_fee}, and \strong{metadata}
+#' \describe{
+#'    \item{amount}{\emph{required} An amount in cents to refund up to remaining charge.}
+#'    \item{refund_application_fee}{\emph{required} true/false if fee should be refunded.
+#'                                  If true, proportional amount of refund is refunded.}
+#'    \item{metadata}{\emph{required} Any metadata to include on the refund.}
+#' }
 #'
 #' @return A data frame with the new refund info if successful.
+#' 
 #' @export
 #'
 stripe_create_refund <- function(api_key, charge_id, args=NULL) {
@@ -33,6 +39,7 @@ stripe_create_refund <- function(api_key, charge_id, args=NULL) {
 #' @param refund_id The id of the refund you want to retrieve
 #'
 #' @return A data frame with the refund info if successful.
+#'
 #' @export
 #'
 stripe_retrieve_refund <- function(api_key, charge_id, refund_id) {
@@ -51,9 +58,13 @@ stripe_retrieve_refund <- function(api_key, charge_id, refund_id) {
 #'
 #' @param refund_id The id of the refund you want to update
 #'
-#' @param args A list can contain \strong{metadata}.
+#' @param args A list can contain:
+#' \describe{
+#'    \limit{metadata}{\emph{optional} Any metadata in a list to change for refund.}
+#' }
 #'
 #' @return A data frame with the updated refund info if successful.
+#'
 #' @export
 #'
 stripe_update_refund <- function(api_key, charge_id, refund_id, args) {
@@ -72,10 +83,15 @@ stripe_update_refund <- function(api_key, charge_id, refund_id, args) {
 #'
 #' @param charge_id The id of the charge with the refund.
 #'
-#' @param args an optional list that can contain
-#' /strong{ending_before}, \strong{limit}, \strong{starting_after}
+#' @param args an optional list that can contain:
+#' \describe{
+#'    \item{ending_before}{\emph{optional:} An object id which will show objects before}
+#'    \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+#'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+#' }
 #'
 #' @return A data frame with refunds information
+#'
 #' @export
 #'
 stripe_list_refunds <- function(api_key, charge_id, args = NULL) {

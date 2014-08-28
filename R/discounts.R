@@ -12,6 +12,7 @@
 #' has the discount to be deleted.
 #'
 #' @return Returns a data frame deleted true if if succeeded.
+#'
 #' @export
 #'
 stripe_delete_customer_discount <- function(api_key, customer_id) {
@@ -31,6 +32,7 @@ stripe_delete_customer_discount <- function(api_key, customer_id) {
 #' @param subscription_id The identifier of the subscription.
 #'
 #' @return Returns a data frame deleted true if if succeeded.
+#'
 #' @export
 #'
 stripe_delete_subscription_discount <- function(api_key, customer_id, subscription_id) {

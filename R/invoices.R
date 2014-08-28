@@ -8,12 +8,18 @@
 #'
 #' @param api_key Your Stripe API Key
 #'
-#' @param args A list which must contain \strong{customer}
-#' It can also contain \strong{description}, \strong{metadata},
-#' \strong{application_fee}, \strong{subscription},
-#' and \strong{statement_description}
+#' @param args A list which must contain 
+#' \describe{
+#'    \item{customer}{\strong{required} customer id for the invoice.}
+#'    \item{description}{\emph{optional} description of invoice.}
+#'    \item{application_fee}{\emph{optional} fee in cents to apply to invoice.}
+#'    \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+#'    \item{subscription}{\emph{optional} id of the subscription to invoice.}
+#'    \item{statement_description}{\emph{optional} Goes on credit card statement of customer.}
+#' }
 #'
 #' @return A data frame with the new invoice if successful.
+#'
 #' @export
 #'
 stripe_create_invoice <- function(api_key, args) {
@@ -31,6 +37,7 @@ stripe_create_invoice <- function(api_key, args) {
 #' @param invoice_id The invoice id you want to retrieve
 #'
 #' @return A data frame with the invoice if successful.
+#'
 #' @export
 #'
 stripe_retrieve_invoice <- function(api_key, invoice_id) {
@@ -46,10 +53,15 @@ stripe_retrieve_invoice <- function(api_key, invoice_id) {
 #'
 #' @param invoice_id The invoice id with the items you want to retrieve
 #'
-#' @param args An optional list that can include \strong{limit}, \strong{customer}
-#' \strong{ending_before}, \strong{subscription}, and/or \strong{starting_after}
+#' @param args An optional list that can include 
+#' \describe{
+#'    \item{ending_before}{\emph{optional:} An object id which will show objects before}
+#'    \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+#'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+#' }
 #'
 #' @return A data frame with the invoice items if successful.
+#'
 #' @export
 #'
 stripe_retrieve_invoice_line_items <- function(api_key, invoice_id, args=NULL) {
@@ -67,11 +79,18 @@ stripe_retrieve_invoice_line_items <- function(api_key, invoice_id, args=NULL) {
 #'
 #' @param invoice_id The invoice id you want to update
 #'
-#' @param args Can include \strong{application_fee}, \strong{description}
-#' \strong{closed}, \strong{forgiven}, \strong{statement_description},
-#' and/or \strong{metadata}
+#' @param args Can include:
+#' \describe{
+#'    \strong{application_fee} 
+#'    \strong{description}
+#'    \strong{closed} 
+#'    \strong{forgiven} 
+#'    \strong{statement_description}
+#'    \strong{metadata}
+#' }
 #'
 #' @return A data frame with the updated invoice if successful.
+#'
 #' @export
 #'
 stripe_update_invoice <- function(api_key, invoice_id, args) {
@@ -89,6 +108,7 @@ stripe_update_invoice <- function(api_key, invoice_id, args) {
 #' @param invoice_id The invoice id you want to pay
 #'
 #' @return A data frame with the invoice if successful.
+#'
 #' @export
 #'
 stripe_pay_invoice <- function(api_key, invoice_id) {
@@ -102,10 +122,15 @@ stripe_pay_invoice <- function(api_key, invoice_id) {
 #'
 #' @param api_key Your Stripe API Key
 #'
-#' @param args An optional list that can include \strong{customer},
-#' \strong{date}, \strong{ending_before}, \strong{limit}, \strong{starting_after}
+#' @param args An optional list that can include:
+#' \describe{
+#'    \item{ending_before}{\emph{optional:} An object id which will show objects before}
+#'    \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+#'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+#' }
 #'
 #' @return A data frame with the invoices if successful.
+#'
 #' @export
 #'
 stripe_list_invoices <- function(api_key, args=NULL) {
@@ -123,6 +148,7 @@ stripe_list_invoices <- function(api_key, args=NULL) {
 #' @param customer_id The customer id that you want the upcoming invoice
 #'
 #' @return A data frame with the upcoming invoice if successful.
+#'
 #' @export
 #'
 stripe_upcoming_customer_invoice <- function(api_key, customer_id) {

@@ -8,13 +8,23 @@
 #'
 #' @param api_key Your Stripe API Key
 #'
-#' @param args A list which must contain \strong{amount},
-#' \strong{currency}, and \strong{recipient}. 
-#' It can also contain \strong{description}, \strong{metadata},
-#' \strong{bank_account}, \strong{card},
-#' and \strong{statement_description}
+#' @param args A list of arguments
+#' \describe{
+#'    \item{amount}{\strong{required} Amount for transfer.}
+#'    \item{currency}{\strong{required} The 3-letter currency.}
+#'    \item{recipient}{\strong{required} The recipient id of the transfer.}
+#'    \item{description}{\emph{optional} The description of the transfer.}
+#'    \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+#'    \item{bank_account}{\emph{optional} The bank to transfer money to.  Include this, card,
+#'                        or neither.}
+#'    \item{card}{\emph{optional} The card to transfer the money to. Include either Bank Account
+#'                Card, or neither.}
+#'    \item{statement_description}{\emph{optional} 15 character description to appear on
+#'                                 statement.}
+#' }
 #'
 #' @return A data frame with transfer information
+#'
 #' @export
 #'
 stripe_create_transfer <- function(api_key, args) {
@@ -34,6 +44,7 @@ stripe_create_transfer <- function(api_key, args) {
 #' @param transfer_id The id of the transfer you want to retrieve
 #'
 #' @return A data frame with the transfer info if successful.
+#'
 #' @export
 #'
 stripe_retrieve_transfer <- function(api_key, transfer_id) {
@@ -52,9 +63,13 @@ stripe_retrieve_transfer <- function(api_key, transfer_id) {
 #' @param transfer_id The id of the transfer you want to update
 #'
 #' @param args A list can contain 
-#' \strong{metadata}, and \strong{description}
+#' \describe{
+#'    \item{metadata}{\emph{optional} A list of metadata to include}
+#'    \item{description}{\emph{optional} A string to describe the transfer}
+#' }
 #'
 #' @return A data frame with the updated transfer info if successful.
+#'
 #' @export
 #'
 stripe_update_transfer <- function(api_key, transfer_id, args) {
@@ -74,6 +89,7 @@ stripe_update_transfer <- function(api_key, transfer_id, args) {
 #' @param transfer_id The id for the tranfer you want to cancel
 #'
 #' @return A data frame with nothing if successful.
+#'
 #' @export
 #'
 stripe_cancel_transfer <- function(api_key, transfer_id) {
@@ -88,11 +104,18 @@ stripe_cancel_transfer <- function(api_key, transfer_id) {
 #'
 #' @param api_key Your Stripe API Key
 #'
-#' @param args an optional list that can contain \strong{date}
-#' \strong{ending_before}, \strong{limit}, \strong{starting_after},
-#' \strong{recipient}, and \strong{status}
+#' @param args an optional list that can contain: 
+#' \describe{
+#'    \item{ending_before}{\emph{optional:} An object id which will show objects before}
+#'    \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+#'    \item{recipient}{\emph{optional:} The id of a recipient to limit to.}
+#'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+#'    \item{status}{\emph{optional:} transfers with: \strong{pending},
+#'                  \strong{paid}, \strong{failed}}
+#' }
 #'
 #' @return A data frame with transfers information
+#'
 #' @export
 #'
 stripe_list_transfers <- function(api_key, args=NULL) {

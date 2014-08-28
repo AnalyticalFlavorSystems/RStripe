@@ -11,7 +11,10 @@ stripe_update_transfer(api_key, transfer_id, args)
 \item{transfer_id}{The id of the transfer you want to update}
 
 \item{args}{A list can contain
-\strong{metadata}, and \strong{description}}
+\describe{
+   \item{metadata}{\emph{optional} A list of metadata to include}
+   \item{description}{\emph{optional} A string to describe the transfer}
+}}
 }
 \value{
 A data frame with the updated transfer info if successful.

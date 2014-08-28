@@ -12,6 +12,7 @@
 #' stripe_retrieve_account("sk_test_2337VDxzNLS332zsso")
 #'
 #' @return Your account information in a data frame.
+#'
 #' @export
 #'
 stripe_retrieve_account <- function(api_key) {

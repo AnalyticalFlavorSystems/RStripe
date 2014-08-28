@@ -10,14 +10,18 @@
 #'
 #' @param charge_id The identifier of the charge with the dispute.
 #'
-#' @param args An optional list that can contain evidence
-#' and metadata
+#' @param args An optional list that can contain 
+#' \describe{
+#'    \item{evidence}{\emph{optional} Evidence towards resolving dispute.}
+#'    \item{metadata}{\emph{optional} key/value for storing dispute information.}
+#' }
 #'
 #' @examples stripe_update_dispute("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
 #' "ch_14TLyd2eZvKYlo2CdryxwrF8", list(evidence="Here's evidence showing
 #' this charge is legitimate.",metadata=list(exhibitA="This happened")))
 #'
 #' @return Returns a dispute data frame if valid.
+#'
 #' @export
 #'
 stripe_update_dispute <- function(api_key, charge_id, args) {
@@ -35,6 +39,7 @@ stripe_update_dispute <- function(api_key, charge_id, args) {
 #' @param charge_id The identifier of the charge with the dispute.
 #'
 #' @return Returns a dispute data frame if closed.
+#'
 #' @export
 #'
 stripe_close_dispute <- function(api_key, charge_id) {

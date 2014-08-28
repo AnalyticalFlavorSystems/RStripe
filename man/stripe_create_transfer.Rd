@@ -8,11 +8,19 @@ stripe_create_transfer(api_key, args)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{A list which must contain \strong{amount},
-\strong{currency}, and \strong{recipient}.
-It can also contain \strong{description}, \strong{metadata},
-\strong{bank_account}, \strong{card},
-and \strong{statement_description}}
+\item{args}{A list of arguments
+\describe{
+   \item{amount}{\strong{required} Amount for transfer.}
+   \item{currency}{\strong{required} The 3-letter currency.}
+   \item{recipient}{\strong{required} The recipient id of the transfer.}
+   \item{description}{\emph{optional} The description of the transfer.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+   \item{bank_account}{\emph{optional} }
+   \item{card}{\emph{optional} The card to transfer the money to. Include either Bank Account
+               Card, or neither.}
+   \item{statement_description}{\emph{optional} 15 character description to appear on
+                                statement.}
+}}
 }
 \value{
 A data frame with transfer information

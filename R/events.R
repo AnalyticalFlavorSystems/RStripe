@@ -11,6 +11,7 @@
 #' @param event_id The identifier of the event to be retrieved
 #'
 #' @return Returns an event data frame if valid.
+#'
 #' @export
 #'
 stripe_retrieve_event <- function(api_key, event_id) {
@@ -25,9 +26,13 @@ stripe_retrieve_event <- function(api_key, event_id) {
 #'
 #' @param api_key Your Stripe API Key
 #'
-#' @param args an optional list that can include \strong{type},
-#' \strong{created}, \strong{ending_before},
-#' \strong{limit}, \strong{starting_after}
+#' @param args an optional list that can include:
+#' \describe{
+#'    \item{ending_before}{\emph{optional:} An object id which will show objects before}
+#'    \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+#'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+#'    \item{type}{\emph{optional} Can contain specific event name or group with '*' wildcard.}
+#' }
 #'
 #' @return Returns an event data frame containing
 #' all the eventsif valid.
