@@ -10,8 +10,11 @@ stripe_update_dispute(api_key, charge_id, args)
 
 \item{charge_id}{The identifier of the charge with the dispute.}
 
-\item{args}{An optional list that can contain evidence
-and metadata}
+\item{args}{An optional list that can contain
+\describe{
+   \item{evidence}{\emph{optional} Evidence towards resolving dispute.}
+   \item{metadata}{\emph{optional} key/value for storing dispute information.}
+}}
 }
 \value{
 Returns a dispute data frame if valid.

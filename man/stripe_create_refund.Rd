@@ -11,7 +11,12 @@ stripe_create_refund(api_key, charge_id, args = NULL)
 \item{charge_id}{The id of the charge to refund.}
 
 \item{args}{A list can contain \strong{amount},
-\strong{refund_application_fee}, and \strong{metadata}}
+\describe{
+   \item{amount}{\emph{required} An amount in cents to refund up to remaining charge.}
+   \item{refund_application_fee}{\emph{required} true/false if fee should be refunded.
+                                 If true, proportional amount of refund is refunded.}
+   \item{metadata}{\emph{required} Any metadata to include on the refund.}
+}}
 }
 \value{
 A data frame with the new refund info if successful.

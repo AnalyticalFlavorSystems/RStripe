@@ -8,7 +8,7 @@
 #'
 #' @param api_key Your Stripe API Key
 #'
-#' @param app_fee_id The id for the Application Fee
+#' @param application_fee_id The id for the Application Fee
 #' you want to retrieve
 #'
 #' @return A data frame with refund app fee information
@@ -29,7 +29,7 @@ stripe_retrieve_application_fee <- function(api_key, application_fee_id) {
 #'
 #' @param args optional list that can include:
 #' \describe{
-#'    \strong{charge}{\emph{optional} Only return feew associated with this charge.}
+#'    \item{charge}{\emph{optional} Only return feew associated with this charge.}
 #'    \item{ending_before}{\emph{optional:} An object id which will show objects before}
 #'    \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
 #'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}

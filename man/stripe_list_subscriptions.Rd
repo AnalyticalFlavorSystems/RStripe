@@ -11,7 +11,11 @@ stripe_list_subscriptions(api_key, customer_id, args = NULL)
 \item{customer_id}{The id of the customer with the subscriptions.}
 
 \item{args}{an optional list that can contain
-/strong{ending_before}, \strong{limit}, \strong{starting_after}}
+\describe{
+   \item{ending_before}{\emph{optional:} An object id which will show objects before}
+   \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+   \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+}}
 }
 \value{
 A data frame with subscriptions information

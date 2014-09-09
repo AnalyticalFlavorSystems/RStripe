@@ -8,9 +8,13 @@ stripe_list_application_fees(api_key, args = NULL)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{optional list that can include
-\strong{charge}, \strong{created}, \strong{ending_before},
-\strong{limit}, \strong{starting_after}}
+\item{args}{optional list that can include:
+\describe{
+   \item{charge}{\emph{optional} Only return feew associated with this charge.}
+   \item{ending_before}{\emph{optional:} An object id which will show objects before}
+   \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+   \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+}}
 }
 \value{
 A data frame with the application fees you

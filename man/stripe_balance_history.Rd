@@ -9,7 +9,17 @@ stripe_balance_history(api_key, args = NULL)
 \item{api_key}{Your Stripe API Key}
 
 \item{args}{optional list which can include
-\url{https://stripe.com/docs/api#balance_history}.}
+\describe{
+   \item{available_on}{\emph{optional:} Filter on date with unix timestamp.}
+   \item{ending_before}{\emph{optional:} An object id which will show objects before}
+   \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+   \item{source}{\emph{optional:} Only returns transactions aassociated with ID.}
+   \item{transfer}{\emph{optional:} Only returns transactions aassociated with transfer.}
+   \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+   \item{type}{\emph{optional:} Type: 'charge', 'refund', 'adjustment', 'application_fee'
+               'application_fee_refund', 'transfer', or 'transfer_failure'}
+   \item{currency}{\emph{optional:} 3 letter ISO}
+}}
 }
 \value{
 A data frame with balance history information if succeeded.

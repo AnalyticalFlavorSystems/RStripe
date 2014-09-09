@@ -12,10 +12,19 @@ stripe_update_subscription(api_key, customer_id, subscription_id, args)
 
 \item{subscription_id}{The id of the subscription you want to update.}
 
-\item{args}{A list can contain \strong{plan},
-\strong{coupon}, \strong{prorate}, \strong{trial_end},
-\strong{application_fee_percent}, \strong{quantity},
-\strong{metadata}, and \strong{card}}
+\item{args}{which includes:
+\describe{
+   \item{plan}{\strong{required} The plan id}
+   \item{coupon}{\emph{optional} A coupon to apply to this subscription.}
+   \item{prorate}{\emph{optional} Flag whether to prorate plan when switched. defaults: true.}
+   \item{trial_end}{\emph{optional} When the trial ends. Unix timestamp to override plan.
+                    You can use \strong{now} to make it end now.}
+   \item{card}{\emph{optional} A token or card dictionary to use instead of default.
+               \strong{required} if customer has no card.}
+   \item{quantity}{\emph{optional} Quantity to place in subscription.}
+   \item{application_fee_percent}{\emph{optional} A decimal 1 to 100 for percentage of amount.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+}}
 }
 \value{
 A data frame with the updated subscription info if successful.

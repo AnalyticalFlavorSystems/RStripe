@@ -25,8 +25,8 @@
 #'    \item{customer}{\emph{optional} Customer to attach token to.}
 #' }
 #'
-#' @examples stripe_create_card_token("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
-#' list(card=list(number="4242424242424242", exp_month="03", exp_year="2018")))
+#' @examples \dontrun{stripe_create_card_token("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
+#' list(card=list(number="4242424242424242", exp_month="03", exp_year="2018")))}
 #'
 #' @return A data frame with the new card token info if successful.
 #'
@@ -54,8 +54,8 @@ stripe_create_card_token <- function(api_key, args) {
 #'    \item{account_number}{\strong{required} Account number for account.  Must be checking.}
 #' }
 #'
-#' @examples stripe_create_account_token("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
-#' list(card=list(country="US", routing_number="110000000", account_number="0000000014343")))
+#' @examples \dontrun{stripe_create_account_token("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
+#' list(card=list(country="US", routing_number="110000000", account_number="0000000014343")))}
 #'
 #' @return A data frame with the new bank account token info if successful.
 #'

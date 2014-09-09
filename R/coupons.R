@@ -21,14 +21,14 @@
 #'    \item{redeem_by}{\strong{optional} unix timestamp that it ends.}
 #' }
 #'
-#' @examples stripe_create_coupon("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
-#' list(amount_off=200, duration='forever'))
+#' @examples \dontrun{stripe_create_coupon("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
+#' list(amount_off=200, duration='forever'))}
 #'
-#' @examples stripe_create_coupon("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
-#' list(percent_off=25, duration='once'))
+#' @examples \dontrun{stripe_create_coupon("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
+#' list(percent_off=25, duration='once'))}
 #'
-#' @examples stripe_create_coupon("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
-#' list(percent_off=25, duration='repeating', duration_in_months=3))
+#' @examples \dontrun{stripe_create_coupon("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
+#' list(percent_off=25, duration='repeating', duration_in_months=3))}
 #'
 #' @return A data frame with the coupon information
 #'
@@ -111,8 +111,8 @@ stripe_delete_coupon <- function(api_key, coupon_id) {
 #'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
 #' }
 #'
-#' @examples stripe_list_application_fee_refunds("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
-#' list(limit=3)) #returns 3 refunds
+#' @examples \dontrun{stripe_list_application_fee_refunds("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
+#' list(limit=3))} #returns 3 refunds
 #'
 #' @return A data frame with all the coupons.
 #'

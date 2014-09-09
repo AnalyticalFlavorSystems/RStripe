@@ -81,12 +81,12 @@ stripe_retrieve_invoice_line_items <- function(api_key, invoice_id, args=NULL) {
 #'
 #' @param args Can include:
 #' \describe{
-#'    \strong{application_fee} 
-#'    \strong{description}
-#'    \strong{closed} 
-#'    \strong{forgiven} 
-#'    \strong{statement_description}
-#'    \strong{metadata}
+#'    \item{application_fee}{}
+#'    \item{description}{}
+#'    \item{closed}{}
+#'    \item{forgiven}{}
+#'    \item{statement_description}{}
+#'    \item{metadata}{}
 #' }
 #'
 #' @return A data frame with the updated invoice if successful.

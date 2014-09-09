@@ -10,8 +10,12 @@ stripe_update_plan(api_key, plan_id, args)
 
 \item{plan_id}{The id of the plan you want to update}
 
-\item{args}{A list can contain \strong{statement_description},
-\strong{metadata}, and \strong{name}}
+\item{args}{A list can contain
+\describe{
+   \item{name}{\emph{optional} The name of plan.  Appears on invoice.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+   \item{statement_description}{\emph{optional} String to appear on invoice. Up to 15 characters}
+}}
 }
 \value{
 A data frame with the updated plan info if successful.

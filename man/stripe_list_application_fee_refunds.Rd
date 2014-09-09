@@ -12,7 +12,11 @@ stripe_list_application_fee_refunds(api_key, application_fee_id, args = NULL)
 you want to refund}
 
 \item{args}{An optional list which can contain
-\strong{ending_before}, \strong{limit}, or \strong{starting_after}}
+\describe{
+   \item{ending_before}{\emph{optional:} An object id which will show objects before}
+   \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+   \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+}}
 }
 \value{
 A data frame with application fee refund object if succeeded

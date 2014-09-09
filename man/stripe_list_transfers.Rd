@@ -8,9 +8,15 @@ stripe_list_transfers(api_key, args = NULL)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{an optional list that can contain \strong{date}
-\strong{ending_before}, \strong{limit}, \strong{starting_after},
-\strong{recipient}, and \strong{status}}
+\item{args}{an optional list that can contain:
+\describe{
+   \item{ending_before}{\emph{optional:} An object id which will show objects before}
+   \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+   \item{recipient}{\emph{optional:} The id of a recipient to limit to.}
+   \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+   \item{status}{\emph{optional:} transfers with: \strong{pending},
+                 \strong{paid}, \strong{failed}}
+}}
 }
 \value{
 A data frame with transfers information

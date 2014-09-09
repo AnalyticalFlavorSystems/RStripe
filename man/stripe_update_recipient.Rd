@@ -10,9 +10,17 @@ stripe_update_recipient(api_key, recipient_id, args)
 
 \item{recipient_id}{The id for the recipient you want to update.}
 
-\item{args}{A list that can contain \strong{name}, \strong{tax_id},
-\strong{bank_account}, \strong{card}, \strong{default_card}, \strong{email},
-\strong{description}, and/or \strong{metadata}.}
+\item{args}{A list that can contain
+\describe{
+   \item{name}{\emph{optional} The legal name of recipient.}
+   \item{tax_id}{\emph{optional} The tax ID either 'SSN' for individual or 'EIN' for corporation}
+   \item{bank_account}{\emph{optional} token or dictionary of details.}
+   \item{card}{\emph{optional} A US Visa/Mastercard debit card to put transfer on.}
+   \item{email}{\emph{optional} Recipients email address.}
+   \item{description}{\emph{optional} Arbitrary string to describe.}
+   \item{metadata}{\emph{optional} key/value for storing information.}
+   \item{default_card}{\emph{optional} The default card to sue.}
+}}
 }
 \value{
 A data frame with recipient information

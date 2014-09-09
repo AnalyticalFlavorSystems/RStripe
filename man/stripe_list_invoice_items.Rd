@@ -8,9 +8,13 @@ stripe_list_invoice_items(api_key, args = NULL)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{A list which must contain \strong{created},
-\strong{customer}, \strong{ending_before}, \strong{limit}
-and \strong{starting_after}}
+\item{args}{A list which can contain:
+\describe{
+   \item{ending_before}{\emph{optional:} An object id which will show objects before}
+   \item{customer}{\emph{optional:} The customer ID whose invoice items to return}
+   \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+   \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+}}
 }
 \value{
 A data frame with the the invoice items if successful.

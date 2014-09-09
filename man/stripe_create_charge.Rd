@@ -8,12 +8,20 @@ stripe_create_charge(api_key, args)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{A list which must contain \strong{amount} and
-\strong{currency}. It also either needs \strong{customer} or \strong{card}
-It can also contain \strong{description}, \strong{metadata},
-\strong{capture}
-\strong{statement_description}, \strong{receipt_email},
-\strong{application_fee}}
+\item{args}{A list of arguments
+\describe{
+   \item{amount}{\strong{required} Amount for transfer.}
+   \item{currency}{\strong{required} The 3-letter currency.}
+   \item{customer}{\emph{optional} Either customer or card required.}
+   \item{card}{\emph{optional} Either customer or card required.}
+   \item{description}{\emph{optional} The description of the transfer.}
+   \item{capture}{\emph{optional} True/false to capture charge later.}
+   \item{recipient_email}{\emph{optional} The email to send receipt to.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+   \item{statement_description}{\emph{optional} 15 character description to appear on
+                                statement.}
+   \item{application_fee}{\emph{optional} A fee in cents applied to charge.}
+}}
 }
 \value{
 A data frame with the new charge info if successful.

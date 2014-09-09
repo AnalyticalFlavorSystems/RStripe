@@ -10,8 +10,12 @@ stripe_update_invoice_item(api_key, item_id, args)
 
 \item{item_id}{The invoice item id you want to update}
 
-\item{args}{Can include \strong{amount}, \strong{description}
-and/or \strong{metadata}}
+\item{args}{Can include
+\describe{
+   \item{amount}{\emph{optional} Amount in cents for item.}
+   \item{description}{\emph{optional} A string to attach to item for easy tracking.}
+   \item{metadata}{\emph{optional} key/value pairs that you can attach to an invoice item.}
+}}
 }
 \value{
 A data frame with the updated invoice item if successful.

@@ -10,10 +10,18 @@ stripe_create_subscription(api_key, customer_id, args)
 
 \item{customer_id}{The customer id you want to add a subscription to.}
 
-\item{args}{A list which must contain \strong{plan}.
-It can also contain \strong{trial_end}, \strong{metadata},
-\strong{coupon}, \strong{card}, \strong{application_fee_percent},
-and \strong{quantity}}
+\item{args}{A list which includes:
+\describe{
+   \item{plan}{\strong{required} The plan id}
+   \item{coupon}{\emph{optional} A coupon to apply to this subscription.}
+   \item{trial_end}{\emph{optional} When the trial ends. Unix timestamp to override plan.
+                    You can use \strong{now} to make it end now.}
+   \item{card}{\emph{optional} A token or card dictionary to use instead of default.
+               \strong{required} if customer has no card.}
+   \item{quantity}{\emph{optional} Quantity to place in subscription.}
+   \item{application_fee_percent}{\emph{optional} A decimal 1 to 100 for percentage of amount.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+}}
 }
 \value{
 A data frame with the new subscription info if successful.

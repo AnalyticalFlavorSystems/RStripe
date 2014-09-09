@@ -9,7 +9,7 @@
 #' @param api_key Your Stripe API key
 #'
 #' @examples
-#' stripe_retrieve_account("sk_test_2337VDxzNLS332zsso")
+#' \dontrun{stripe_retrieve_account("sk_test_2337VDxzNLS332zsso")}
 #'
 #' @return Your account information in a data frame.
 #'

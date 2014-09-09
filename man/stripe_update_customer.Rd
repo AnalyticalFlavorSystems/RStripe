@@ -10,9 +10,17 @@ stripe_update_customer(api_key, customer_id, args)
 
 \item{customer_id}{The id of the customer you want to update}
 
-\item{args}{an optional list which can contain
-\strong{card}, \strong{account_balance}, \strong{coupon}, \strong{description},
-\strong{metadata}, \strong{email}, \strong{default_card},}
+\item{args}{an optional list which can contain:
+\describe{
+   \item{account_balance}{\emph{optional} In cents starting account balance. Positive means
+                          amount to be paid off. Negative is credit used towards charge.}
+   \item{card}{\emph{optional} Either token from Stripe.js or card details.}
+   \item{description}{\emph{optional} The description of the transfer.}
+   \item{default_card}{\emph{optional} The id of a card to use as default.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+   \item{coupon}{\emph{optional} A coupon code for a discount applied on all charges.}
+   \item{email}{\emph{optional} Customer's email address.}
+}}
 }
 \value{
 A data frame with the updated Customer info if successful.

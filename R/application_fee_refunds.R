@@ -17,13 +17,13 @@
 #'    \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
 #' }
 #'
-#' @examples stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk")
+#' @examples \dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk")}
 #'
-#' @examples stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
-#' list(amount=100))
+#' @examples \dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
+#' list(amount=100))}
 #'
-#' @examples stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
-#' list(metadata=list(reason="Accidental charge")))
+#' @examples \dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
+#' list(metadata=list(reason="Accidental charge")))}
 #'
 #' @return A data frame with refund information
 #'
@@ -73,8 +73,8 @@ stripe_retrieve_application_fee_refund <- function(api_key, application_fee_id, 
 #'    \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
 #' }
 #'
-#' @examples stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
-#' list(metadata=list(reason="Accidental charge")))
+#' @examples \dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
+#' list(metadata=list(reason="Accidental charge")))}
 #'
 #' @return A data frame with application fee refund object if succeeded
 #'
@@ -103,8 +103,8 @@ stripe_update_application_fee_refund <- function(api_key, application_fee_id, re
 #'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
 #' }
 #'
-#' @examples stripe_list_application_fee_refunds("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
-#' list(limit=3)) #returns 3 refunds
+#' @examples \dontrun{stripe_list_application_fee_refunds("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
+#' list(limit=3))} #returns 3 refunds
 #'
 #' @return A data frame with application fee refund object if succeeded
 #'

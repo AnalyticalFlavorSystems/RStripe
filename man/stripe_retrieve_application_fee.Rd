@@ -8,7 +8,7 @@ stripe_retrieve_application_fee(api_key, application_fee_id)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{app_fee_id}{The id for the Application Fee
+\item{application_fee_id}{The id for the Application Fee
 you want to retrieve}
 }
 \value{

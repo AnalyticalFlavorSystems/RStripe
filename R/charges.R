@@ -23,9 +23,9 @@
 #'    \item{application_fee}{\emph{optional} A fee in cents applied to charge.}
 #' }
 #'
-#' @examples stripe_create_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
+#' @examples \dontrun{stripe_create_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
 #' list(card="tok_14SsjM2eZvKYlo2CCtdx2AvO", amount=3000, currency="usd",
-#' metadata=list(order_id="12545")))
+#' metadata=list(order_id="12545")))}
 #'
 #' @return A data frame with the new charge info if successful.
 #'
@@ -47,8 +47,8 @@ stripe_create_charge <- function(api_key,args) {
 #'
 #' @param charge_id The identifier of the charge to be retrieved
 #'
-#' @examples stripe_retrieve_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
-#' "ch_14TLyd2eZvKYlo2CdryxwrF8")
+#' @examples \dontrun{stripe_retrieve_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
+#' "ch_14TLyd2eZvKYlo2CdryxwrF8")}
 #'
 #' @return Returns a charge data frame if valid.
 #'
@@ -73,9 +73,9 @@ stripe_retrieve_charge <- function(api_key, charge_id) {
 #'    \item{description}{\emph{optional} A string to describe it}
 #' }
 #'
-#' @examples stripe_update_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
+#' @examples \dontrun{stripe_update_charge("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
 #' "ch_14TLyd2eZvKYlo2CdryxwrF8", list(description="for the item",
-#' metadata=list(order_id="3453")))
+#' metadata=list(order_id="3453")))}
 #'
 #' @return Returns a charge data frame if succeeded.
 #'

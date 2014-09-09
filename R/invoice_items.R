@@ -14,7 +14,7 @@
 #'    \item{amount}{\strong{required} In cents how much for item.}
 #'    \item{currency}{\strong{required} 3-letter ISO code for currency.}
 #'    \item{description}{\emph{optional} A string to attach to item for easy tracking.}
-#'    \item{metadata{\emph{optional} key/value pairs that you can attach to an invoice item.}
+#'    \item{metadata}{\emph{optional} key/value pairs that you can attach to an invoice item.}
 #'    \item{invoice}{\emph{optional} Add to this invoice or leave blank for next invoice.}
 #'    \item{subscription}{\emph{optional} Add to a specific subscriptions invoice.}
 #' }
@@ -58,7 +58,7 @@ stripe_retrieve_invoice_item <- function(api_key, item_id) {
 #' \describe{
 #'    \item{amount}{\emph{optional} Amount in cents for item.}
 #'    \item{description}{\emph{optional} A string to attach to item for easy tracking.}
-#'    \item{metadata{\emph{optional} key/value pairs that you can attach to an invoice item.}
+#'    \item{metadata}{\emph{optional} key/value pairs that you can attach to an invoice item.}
 #' }
 #'
 #' @return A data frame with the updated invoice item if successful.
@@ -101,8 +101,6 @@ stripe_delete_invoice_item <- function(api_key, item_id) {
 #'    \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
 #'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
 #' }
-#' \strong{customer}, \strong{ending_before}, \strong{limit}
-#' and \strong{starting_after}
 #'
 #' @return A data frame with the the invoice items if successful.
 #' @export

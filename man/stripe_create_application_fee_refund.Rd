@@ -12,7 +12,10 @@ stripe_create_application_fee_refund(api_key, application_fee_id, args = NULL)
 you want to refund}
 
 \item{args}{An optional list which can contain an amount to refund
-\emph{default is entire fee} and metadata}
+\describe{
+   \item{amount}{\emph{optional} default is entire fee}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+}}
 }
 \value{
 A data frame with refund information

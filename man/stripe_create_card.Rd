@@ -11,7 +11,7 @@ stripe_create_card(api_key, customer_id, args)
 \item{customer_id}{The id for the customer you want the credit card
 added to.}
 
-\item{args}{A required list of either contains a token,
+\item{args}{A required list of either a token,
 or a card dictionary. /href{https://stripe.com/docs/api#create_card}{more info here}}
 }
 \value{

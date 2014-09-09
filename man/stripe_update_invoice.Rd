@@ -10,9 +10,15 @@ stripe_update_invoice(api_key, invoice_id, args)
 
 \item{invoice_id}{The invoice id you want to update}
 
-\item{args}{Can include \strong{application_fee}, \strong{description}
-\strong{closed}, \strong{forgiven}, \strong{statement_description},
-and/or \strong{metadata}}
+\item{args}{Can include:
+\describe{
+   \item{application_fee}{}
+   \item{description}{}
+   \item{closed}{}
+   \item{forgiven}{}
+   \item{statement_description}{}
+   \item{metadata}{}
+}}
 }
 \value{
 A data frame with the updated invoice if successful.

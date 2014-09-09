@@ -8,9 +8,18 @@ stripe_create_coupon(api_key, args)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{An list which must contain \strong{duration}.
-It can also contain \strong{id}, \strong{amount_off},
-\strong{currency} and more.  View \url{http://stripe.com/docs/api#create_coupon}.}
+\item{args}{An list
+\describe{
+   \item{duration}{\strong{required} Can be \emph{forever}, \emph{once}, \emph{repeating}}
+   \item{id}{\strong{optional} An id to identify. e.g. \emph{FALL25OFF}}
+   \item{amount_off}{\strong{optional} required if \emph{percent_off} is not passed.  Integer.}
+   \item{currency}{\strong{optional} required if amount_off is passed.}
+   \item{duration_in_months}{\strong{optional} required if duration is repeating.}
+   \item{max_redemptions}{\strong{optional} total amount of times to be used.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+   \item{percent_off}{\strong{optional} required if amount_off not passed.}
+   \item{redeem_by}{\strong{optional} unix timestamp that it ends.}
+}}
 }
 \value{
 A data frame with the coupon information

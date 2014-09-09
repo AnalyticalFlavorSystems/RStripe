@@ -101,7 +101,7 @@ stripe_delete_recipient <- function(api_key, recipient_id) {
 #'
 #' @param args an optional list that can contain: 
 #' \describe{
-#'    \strong{verified}{\emph{optional:} Show only verified recipients.}
+#'    \item{verified}{\emph{optional:} Show only verified recipients.}
 #'    \item{ending_before}{\emph{optional:} An object id which will show objects before}
 #'    \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
 #'    \item{starting_after}{\emph{optional:} An object id which will show objects starting here}

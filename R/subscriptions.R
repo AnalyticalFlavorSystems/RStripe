@@ -21,6 +21,7 @@
 #'    \item{quantity}{\emph{optional} Quantity to place in subscription.}
 #'    \item{application_fee_percent}{\emph{optional} A decimal 1 to 100 for percentage of amount.}
 #'    \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+#' }
 #'
 #' @return A data frame with the new subscription info if successful.
 #'
@@ -60,7 +61,8 @@ stripe_retrieve_subscription <- function(api_key, customer_id, subscription_id) 
 #'
 #' @param subscription_id The id of the subscription you want to update.
 #'
-#' @param args A list can contain \strong{plan}, 
+#' @param args which includes:
+#' \describe{
 #'    \item{plan}{\strong{required} The plan id}
 #'    \item{coupon}{\emph{optional} A coupon to apply to this subscription.}
 #'    \item{prorate}{\emph{optional} Flag whether to prorate plan when switched. defaults: true.}

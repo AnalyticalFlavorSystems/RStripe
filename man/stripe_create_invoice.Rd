@@ -8,10 +8,15 @@ stripe_create_invoice(api_key, args)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{A list which must contain \strong{customer}
-It can also contain \strong{description}, \strong{metadata},
-\strong{application_fee}, \strong{subscription},
-and \strong{statement_description}}
+\item{args}{A list which must contain
+\describe{
+   \item{customer}{\strong{required} customer id for the invoice.}
+   \item{description}{\emph{optional} description of invoice.}
+   \item{application_fee}{\emph{optional} fee in cents to apply to invoice.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+   \item{subscription}{\emph{optional} id of the subscription to invoice.}
+   \item{statement_description}{\emph{optional} Goes on credit card statement of customer.}
+}}
 }
 \value{
 A data frame with the new invoice if successful.

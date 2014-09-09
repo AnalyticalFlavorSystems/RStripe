@@ -12,7 +12,10 @@ stripe_update_refund(api_key, charge_id, refund_id, args)
 
 \item{refund_id}{The id of the refund you want to update}
 
-\item{args}{A list can contain \strong{metadata}.}
+\item{args}{A list can contain:
+\describe{
+   \item{metadata}{\emph{optional} Any metadata in a list to change for refund.}
+}}
 }
 \value{
 A data frame with the updated refund info if successful.

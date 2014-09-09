@@ -9,7 +9,11 @@ stripe_create_account_token(api_key, args)
 \item{api_key}{Your Stripe API Key}
 
 \item{args}{A list which must contain bank account information including
-\strong{country}, \strong{routing_number}, and \strong{account_number}}
+\describe{
+   \item{country}{\strong{required} Country bank account is in.  Only 'US' supported.}
+   \item{routing_number}{\strong{required} routing number in string form.  Not wire number.}
+   \item{account_number}{\strong{required} Account number for account.  Must be checking.}
+}}
 }
 \value{
 A data frame with the new bank account token info if successful.

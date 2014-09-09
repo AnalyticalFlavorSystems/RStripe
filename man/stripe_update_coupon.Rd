@@ -10,8 +10,11 @@ stripe_update_coupon(api_key, coupon_id, args)
 
 \item{coupon_id}{The coupon you want to update.}
 
-\item{args}{An list which can contain a \emph{list of \strong{metadata}}
-and/or a \strong{description}}
+\item{args}{An list which can contain:
+\describe{
+   \item{description}{\emph{optional} The description of the transfer.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+}}
 }
 \value{
 A data frame with the new coupon information if succeeded.

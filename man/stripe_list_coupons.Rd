@@ -9,7 +9,11 @@ stripe_list_coupons(api_key, args = NULL)
 \item{api_key}{Your Stripe API Key}
 
 \item{args}{An optional list which can contain
-\strong{ending_before}, \strong{limit}, or \strong{starting_after}}
+\describe{
+   \item{ending_before}{\emph{optional:} An object id which will show objects before}
+   \item{limit}{\emph{optional:} A number 1 to 100 to limit the items.  Default is 10}
+   \item{starting_after}{\emph{optional:} An object id which will show objects starting here}
+}}
 }
 \value{
 A data frame with all the coupons.

@@ -8,10 +8,17 @@ stripe_create_recipient(api_key, args)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{A required list that must contain \strong{name}
-and \strong{type}. It can also contain \strong{tax_id},
-\strong{bank_account}, \strong{card}, \strong{email},
-\strong{description}, and/or \strong{metadata}.}
+\item{args}{A required list that must contain
+\describe{
+   \item{name}{\strong{required} The legal name of recipient.}
+   \item{type}{\strong{required} put 'individual' or 'corporation'.}
+   \item{tax_id}{\emph{optional} The tax ID either 'SSN' for individual or 'EIN' for corporation}
+   \item{bank_account}{\emph{optional} token or dictionary of details.}
+   \item{card}{\emph{optional} A US Visa/Mastercard debit card to put transfer on.}
+   \item{email}{\emph{optional} Recipients email address.}
+   \item{description}{\emph{optional} Arbitrary string to describe.}
+   \item{metadata}{\emph{optional} key/value for storing information.}
+}}
 }
 \value{
 A data frame with new recipient information

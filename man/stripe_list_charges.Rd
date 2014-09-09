@@ -9,8 +9,12 @@ stripe_list_charges(api_key, args = NULL)
 \item{api_key}{Your Stripe API Key}
 
 \item{args}{an optional list that can include \strong{customer},
-\strong{created}, \strong{optional}, \strong{ending_before},
-\strong{limit}, \strong{starting_after}}
+\describe{
+   \item{customer}{\emph{optional} A customer id to show only their charges. }
+   \item{ending_before}{\emph{optional} An id to show the ones before this item.}
+   \item{limit}{\emph{optional} The limit to show.  Can be 1 to 100.  Default is 10.}
+   \item{starting_after}{\emph{optional} An id to show the ones starting after this item.}
+}}
 }
 \value{
 Returns a data frame with all customer charges.  10 if no limit specified.

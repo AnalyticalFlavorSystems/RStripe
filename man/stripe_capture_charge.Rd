@@ -11,7 +11,10 @@ stripe_capture_charge(api_key, charge_id, args = NULL)
 \item{charge_id}{The identifier of the charge to be captured}
 
 \item{args}{an optional list that can include \strong{amount},
-\strong{application_fee}, \strong{receipt_email}}
+\describe{
+   \item{application_fee}{\emph{optional} A fee to add on to a charge. Only Stripe Connect}
+   \item{receipt_email}{\emph{optional} The email to send receipt to.}
+}}
 }
 \value{
 Returns a charge data frame if the capture succeeded.

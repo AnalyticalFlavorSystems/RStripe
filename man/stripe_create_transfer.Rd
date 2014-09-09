@@ -15,7 +15,8 @@ stripe_create_transfer(api_key, args)
    \item{recipient}{\strong{required} The recipient id of the transfer.}
    \item{description}{\emph{optional} The description of the transfer.}
    \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
-   \item{bank_account}{\emph{optional} }
+   \item{bank_account}{\emph{optional} The bank to transfer money to.  Include this, card,
+                       or neither.}
    \item{card}{\emph{optional} The card to transfer the money to. Include either Bank Account
                Card, or neither.}
    \item{statement_description}{\emph{optional} 15 character description to appear on

@@ -10,7 +10,7 @@
 #'
 #' @param args A list which must contain 
 #' \describe{
-#'    \item{id} The id of the plan to use.  e.g. 'gold'}
+#'    \item{id}{The id of the plan to use.  e.g. 'gold'}
 #'    \item{amount}{\strong{required} The amount in cents to charge.}
 #'    \item{currency}{\strong{required} 3-letter ISO code for currency.}
 #'    \item{interval}{\strong{required} Specifies billing frequencey.  \strong{day}, \strong{week}
@@ -22,8 +22,8 @@
 #'    \item{statement_description}{\emph{optional} String to appear on invoice. Up to 15 characters}
 #' }
 #'
-#' @examples stripe_create_plan("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
-#' list(id="example-gold", amount=3000, currency="usd", interval="month"))
+#' @examples \dontrun{stripe_create_plan("sk_test_BQokikJOvBiI2HlWgH4olfQ2",
+#' list(id="example-gold", amount=3000, currency="usd", interval="month"))}
 #'
 #' @return A data frame with the new plan info if successful.
 #'

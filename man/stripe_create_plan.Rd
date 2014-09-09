@@ -8,11 +8,19 @@ stripe_create_plan(api_key, args)
 \arguments{
 \item{api_key}{Your Stripe API Key}
 
-\item{args}{A list which must contain \strong{id}, \strong{amount},
-\strong{currency}, \strong{interval}, and \strong{name}.
-It can also contain \strong{description}, \strong{metadata},
-\strong{interval_count}, \strong{trial_period_days},
-and \strong{statement_description}}
+\item{args}{A list which must contain
+\describe{
+   \item{id}{The id of the plan to use.  e.g. 'gold'}
+   \item{amount}{\strong{required} The amount in cents to charge.}
+   \item{currency}{\strong{required} 3-letter ISO code for currency.}
+   \item{interval}{\strong{required} Specifies billing frequencey.  \strong{day}, \strong{week}
+                   \strong{month}, \strong{year}.}
+   \item{name}{\strong{required} The name of plan.  Appears on invoice.}
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+   \item{trial_period_days}{\emph{optional} Specifies trial period in day.}
+   \item{interval_count}{\emph{optional} intervals in billing.  e.g. 3 if interval=month}
+   \item{statement_description}{\emph{optional} String to appear on invoice. Up to 15 characters}
+}}
 }
 \value{
 A data frame with the new plan info if successful.

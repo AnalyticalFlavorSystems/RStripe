@@ -15,8 +15,10 @@ you want to refund}
 \item{refund_id}{The id for the Refund
 you want to update}
 
-\item{args}{An optional list which can contain an amount to refund
-\emph{default is entire fee} and metadata}
+\item{args}{An optional list which can contain:
+\describe{
+   \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
+}}
 }
 \value{
 A data frame with application fee refund object if succeeded

@@ -60,7 +60,7 @@ stripe_retrieve_refund <- function(api_key, charge_id, refund_id) {
 #'
 #' @param args A list can contain:
 #' \describe{
-#'    \limit{metadata}{\emph{optional} Any metadata in a list to change for refund.}
+#'    \item{metadata}{\emph{optional} Any metadata in a list to change for refund.}
 #' }
 #'
 #' @return A data frame with the updated refund info if successful.

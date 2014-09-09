@@ -10,7 +10,11 @@ stripe_update_charge(api_key, charge_id, args)
 
 \item{charge_id}{The identifier of the charge to be updated}
 
-\item{args}{A list that can include metadata and/or a description}
+\item{args}{A list that can include:
+\describe{
+   \item{metadata}{\emph{optional} A list of metadata to include}
+   \item{description}{\emph{optional} A string to describe it}
+}}
 }
 \value{
 Returns a charge data frame if succeeded.

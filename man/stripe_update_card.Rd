@@ -14,11 +14,17 @@ added to.}
 \item{card_id}{The id for the card you want to update}
 
 \item{args}{A list that can contain the following
-\strong{address_city}, \strong{address_country},
-\strong{address_line1}, \strong{address_line2},
-\strong{address_state}, \strong{address_zip},
-\strong{exp_month}, \strong{exp_year},
-\strong{name}}
+\describe{
+   \item{address_city}{\emph{optional}}
+   \item{address_country}{\emph{optional}}
+   \item{address_line1}{\emph{optional}}
+   \item{address_line2}{\emph{optional}}
+   \item{address_state}{\emph{optional}}
+   \item{address_zip}{\emph{optional}}
+   \item{exp_month}{\emph{optional}}
+   \item{exp_year}{\emph{optional}}
+   \item{name}{\emph{optional}}
+}}
 }
 \value{
 A data frame with card information

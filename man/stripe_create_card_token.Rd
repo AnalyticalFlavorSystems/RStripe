@@ -9,8 +9,20 @@ stripe_create_card_token(api_key, args)
 \item{api_key}{Your Stripe API Key}
 
 \item{args}{A list which must contain card information including
-\strong{number}, \strong{exp_month}, and \strong{exp_year}
-It can also contain \strong{customer}.}
+\describe{
+   \item{number}{\strong{required}}
+   \item{cvc}{\strong{required}}
+   \item{exp_month}{\strong{required}}
+   \item{exp_year}{\strong{required}}
+   \item{address_city}{\emph{optional}}
+   \item{address_country}{\emph{optional}}
+   \item{address_line1}{\emph{optional}}
+   \item{address_line2}{\emph{optional}}
+   \item{address_state}{\emph{optional}}
+   \item{address_zip}{\emph{optional}}
+   \item{name}{\emph{optional}}
+   \item{customer}{\emph{optional} Customer to attach token to.}
+}}
 }
 \value{
 A data frame with the new card token info if successful.
