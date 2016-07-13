@@ -1,4 +1,4 @@
-Package: Rstripe
+Package: RStripe
 Title: An API to connect to the stripe payment processor
 Version: 0.1
 Author: Evan Farrell <evandev@gastrograph.com>
