@@ -17,7 +17,8 @@
 #'    \item{metadata}{\emph{optional} A list which can contain anything to further describe.}
 #' }
 #'
-#' @examples \dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk")}
+#' @examples \dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
+#' "fee_4cbC9iLv8PdUnk")}
 #'
 #' @examples \dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk",
 #' list(amount=100))}

@@ -25,7 +25,8 @@ A data frame with refund information
 Create a refund for an application fee.
 }
 \examples{
-\dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", "fee_4cbC9iLv8PdUnk")}
+\dontrun{stripe_create_application_fee_refund("sk_test_BQokikJOvBiI2HlWgH4olfQ2", 
+"fee_4cbC9iLv8PdUnk")}
 
 }
 

@@ -1,10 +1,9 @@
 Package: RStripe
-Title: An API to connect to the stripe payment processor
+Title: An API to Connect to the Stripe Payment Processor
 Version: 0.1
 Author: Evan Farrell <evandev@gastrograph.com>
 Maintainer: Evan Farrell <evandev@gastrograph.com>
-Description: An easier interface to communicate with the
-    stripe payment processor instead of using complex RCurl syntax
+Description: An easier interface to communicate with the stripe payment processor instead of using complex RCurl syntax.
 Depends:
     R (>= 3.1.1)
 Imports:
