@@ -1,5 +1,5 @@
 Package: RStripe
-Title: An convenience interface for the Stripe Payment API
+Title: A Convenience Interface for the Stripe Payment API
 Version: 0.1
 Author: Evan Farrell <evandev@gastrograph.com>
 Maintainer: Evan Farrell <evandev@gastrograph.com>
