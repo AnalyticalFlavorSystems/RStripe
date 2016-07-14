@@ -3,7 +3,7 @@ Title: An API to Connect to the Stripe Payment Processor
 Version: 0.1
 Author: Evan Farrell <evandev@gastrograph.com>
 Maintainer: Evan Farrell <evandev@gastrograph.com>
-Description: An easier interface to communicate with the stripe payment processor instead of using complex RCurl syntax.
+Description: A convenience interface for communicating with the Stripe payment processor to accept payments online. See <https://stripe.com> for more information.
 Depends:
     R (>= 3.1.1)
 Imports:
