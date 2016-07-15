@@ -4,6 +4,8 @@ Version: 0.1
 Author: Evan Farrell <evandev@gastrograph.com>
 Maintainer: Evan Farrell <evandev@gastrograph.com>
 Description: A convenience interface for communicating with the Stripe payment processor to accept payments online. See <https://stripe.com> for more information.
+URL: https://github.com/Gastrograph/RStripe
+BugReports: https://github.com/Gastrograph/RStripe/issues
 Depends:
     R (>= 3.1.1)
 Imports:
